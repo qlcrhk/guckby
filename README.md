@@ -25,5 +25,5 @@
 2024-10-07
 
 ## 학습내용
-1.function
-2.array
+1. function
+2. array
