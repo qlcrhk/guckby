@@ -71,6 +71,7 @@ public class java241007 {
 		for(int i=0;i < b.length; i++) {
 			System.out.println(b[i]);
 		}
+		
 	}
 
 }
