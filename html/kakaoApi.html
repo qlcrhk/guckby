@@ -1,0 +1,297 @@
+<?php ?>
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>텀블러와 함께하는 일상 Tumb</title>
+    <link rel="stylesheet" href="http://syp7875.dothome.co.kr/theme/basic/css/default.css?ver=2303229">
+    <link rel="stylesheet" href="http://syp7875.dothome.co.kr/js/font-awesome/css/font-awesome.min.css?ver=2303229">
+    <link rel="stylesheet" href="http://syp7875.dothome.co.kr/theme/basic/skin/connect/basic/style.css?ver=2303229">
+    <link rel="stylesheet" href="http://syp7875.dothome.co.kr/theme/basic/skin/popular/basic/style.css?ver=2303229">
+    <link rel="stylesheet" href="http://syp7875.dothome.co.kr/theme/basic/skin/latest/pic_list/style.css?ver=2303229">
+    <link rel="stylesheet" href="http://syp7875.dothome.co.kr/theme/basic/skin/latest/pic_block/style.css?ver=2303229">
+    <link rel="stylesheet" href="http://syp7875.dothome.co.kr/theme/basic/skin/latest/basic/style.css?ver=2303229">
+    <link rel="stylesheet" href="http://syp7875.dothome.co.kr/theme/basic/skin/outlogin/basic/style.css?ver=2303229">
+    <link rel="stylesheet" href="http://syp7875.dothome.co.kr/theme/basic/skin/latest/notice/style.css?ver=2303229">
+    <link rel="stylesheet" href="http://syp7875.dothome.co.kr/theme/basic/skin/visit/basic/style.css?ver=2303229">
+    <link rel="stylesheet" href="http://syp7875.dothome.co.kr/js/owlcarousel/owl.carousel.min.css?ver=2303229">
+    <link rel="stylesheet" href="http://syp7875.dothome.co.kr/shop/css/navi_bar.css">
+    <link rel="stylesheet" href="http://syp7875.dothome.co.kr/shop/css/home_main_content.css">
+    <link rel="stylesheet" href="http://syp7875.dothome.co.kr/shop/css/slider2.css">
+
+    <!--[if lte IE 8]>main_content
+<script src="http://syp7875.dothome.co.kr/js/html5.js"></script>
+<![endif]-->
+    <script>
+        // 자바스크립트에서 사용하는 전역변수 선언
+        var g5_url = "http://syp7875.dothome.co.kr";
+        var g5_bbs_url = "http://syp7875.dothome.co.kr/bbs";
+        var g5_is_member = "1";
+        var g5_is_admin = "";
+        var g5_is_mobile = "";
+        var g5_bo_table = "";
+        var g5_sca = "";
+        var g5_editor = "";
+        var g5_cookie_domain = "";
+        var g5_theme_shop_url = "http://syp7875.dothome.co.kr/theme/basic/shop";
+        var g5_shop_url = "http://syp7875.dothome.co.kr/shop";
+    </script>
+    <script src="http://syp7875.dothome.co.kr/js/jquery-1.12.4.min.js?ver=2304171"></script>
+    <script src="http://syp7875.dothome.co.kr/js/jquery-migrate-1.4.1.min.js?ver=2304171"></script>
+    <script src="http://syp7875.dothome.co.kr/js/jquery.menu.js?ver=2304171"></script>
+    <script src="http://syp7875.dothome.co.kr/js/common.js?ver=2304171"></script>
+    <script src="http://syp7875.dothome.co.kr/js/wrest.js?ver=2304171"></script>
+    <script src="http://syp7875.dothome.co.kr/js/placeholders.min.js?ver=2304171"></script>
+    <script src="http://syp7875.dothome.co.kr/js/owlcarousel/owl.carousel.min.js?ver=2304171"></script>
+    <script src="http://syp7875.dothome.co.kr/js/jquery.bxslider.js?ver=2304171"></script>
+    <script src="http://syp7875.dothome.co.kr/shop/js/navi_bar.js"></script>
+    <script src="http://syp7875.dothome.co.kr/shop/js/slider2.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <!-- <script src="./js/kakaoShareBtn.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey= javascript api key &libraries=services,clusterer,drawing">
+    </script>
+
+    <style>
+        #qrcode {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav_menu_b">
+                <li><a href="#">BRAND</a></li>
+                <li><a href="http://syp7875.dothome.co.kr/shop/index_product.html">PRODUCT</a></li>
+            </ul>
+            <a href="./index.html" class="logo_link"><img src="http://syp7875.dothome.co.kr/shop/img/logo.png"
+                    alt="Logo" id="logo"></a>
+            <ul class="nav_menu_b">
+                <li><a href="./bulletinBoard.html">COMMUNITY</a></li>
+                <li><a href="./mypage.html">MY PAGE</a></li>
+            </ul>
+
+            <ul class="hamburger">
+                <li>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </li>
+            </ul>
+            <ul class="nav_menu_mobile">
+                <li><a href="#">BRAND</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+                <li><a href="#">MY PAGE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="slide-container">
+            <div class="slide-wrapper">
+                <div class="slide slide-img"></div>
+                <div>
+                    <h1>DEVELOP IN YOUR LIFE</h1>
+                </div>
+                <div class="sub-title">
+                    <h2>with Tumb</h2>
+                </div>
+            </div>
+            <div class="btn-box">
+                <div class="prev-btn">
+                    <p>〈</p>
+                </div>
+                <div class="next-btn">
+                    <p>〉</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="brand_container">
+            <div class="brand_contents">
+                <h1>Brand</h1>
+                <a href="#" class="brand_btn"><img src="http://syp7875.dothome.co.kr/shop/img/logo.png" alt=""></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam architecto aliquid quibusdam
+                    impedit voluptas nam fugit laboriosam alias, aperiam natus molestiae fugiat asperiores, perspiciatis
+                </p>
+
+            </div>
+        </div>
+
+        <!-- 카카오 지도 -->
+        <div class="map-container" style="text-align: center;">
+            <h1 style="font-size: 3em; margin: 1.5em;">오시는 길</h1>
+            <div id="map" style="width:500px;height:400px; margin: 0 auto;"></div>
+            <button onclick="getCurrentLocation()">현재 위치 찾기</button>
+        </div>
+        <script>
+            var container = document.getElementById('map');
+            var options = {
+                center: new kakao.maps.LatLng(33.450701, 126.570667),
+                level: 7
+            };
+
+            var map = new kakao.maps.Map(container, options);
+
+            function getCurrentLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(function (position) {
+                        var lat = position.coords.latitude;
+                        var lon = position.coords.longitude;
+                        console.log("현재 위치 좌표:", lat, lon); // 좌표 확인 로그 추가
+
+                        var locPosition = new kakao.maps.LatLng(lat, lon);
+                        map.setCenter(locPosition);
+
+                        var marker = new kakao.maps.Marker({
+                            position: locPosition
+                        });
+                        marker.setMap(map);
+                    }, function (error) {
+                        console.error("위치 정보를 가져오는 중 오류 발생:", error.message); // 오류 메시지 출력
+                        alert('위치 정보를 가져올 수 없습니다.');
+                    });
+                } else {
+                    alert('이 브라우저는 위치 정보를 지원하지 않습니다.');
+                }
+            }
+        </script>
+
+
+        <!-- 카카오 버튼 -->
+    </main>
+
+    <!-- 하단 시작 { -->
+    <div id="ft">
+
+        <div id="ft_wr">
+            <div id="ft_link" class="ft_cnt">
+                <a href="http://syp7875.dothome.co.kr/bbs/content.php?co_id=company">회사소개</a>
+                <a href="http://syp7875.dothome.co.kr/bbs/content.php?co_id=privacy">개인정보처리방침</a>
+                <a href="http://syp7875.dothome.co.kr/bbs/content.php?co_id=provision">서비스이용약관</a>
+                <a href="http://syp7875.dothome.co.kr/">상품구매페이지</a>
+            </div>
+            <div id="ft_company" class="ft_cnt">
+                <h2>사이트 정보</h2>
+                <p class="ft_info">
+                    회사명 : 회사명 / 대표 : 대표자명<br>
+                    주소 : OO도 OO시 OO구 OO동 123-45<br>
+                    사업자 등록번호 : 123-45-67890<br>
+                    전화 : 02-123-4567 팩스 : 02-123-4568<br>
+                    통신판매업신고번호 : 제 OO구 - 123호<br>
+                    개인정보관리책임자 : 정보책임자명<br>
+                </p>
+            </div>
+
+            <div class="notice ft_cnt">
+                <h2><a href="http://syp7875.dothome.co.kr/bbs/board.php?bo_table=notice">공지사항</a></h2>
+                <ul>
+                    <li class="empty_li">게시물이 없습니다.</li>
+                </ul>
+            </div>
+            <div class="notice ft_cnt">
+                <h2><a href="#">상품안내</a></h2>
+                <ul>
+                    <div>
+                        <div>
+                            <input class="custom" type="button" onClick="sendLinkCustom();" value="인기상품" />
+                            <script type="text/javascript">
+                                // Kakao SDK 초기화 여부를 먼저 확인
+                                if (!window.Kakao) {
+                                    alert('Kakao SDK 로딩에 실패했습니다.');
+                                } else if (!Kakao.isInitialized()) {
+                                    Kakao.init('api key'); // 중복 초기화를 방지
+                                }
+
+                                function sendLinkCustom() {
+                                    Kakao.Link.sendCustom({
+                                        templateId: 113461
+                                    });
+                                }
+
+                                function sendLinkDefault() {
+                                    Kakao.Link.sendDefault({
+                                        objectType: 'feed',
+                                        content: {
+                                            title: '딸기 치즈 케익',
+                                            description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+                                            imageUrl: 'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+                                            link: {
+                                                mobileWebUrl: 'https://developers.kakao.com',
+                                                webUrl: 'https://developers.kakao.com',
+                                            },
+                                        },
+                                        social: {
+                                            likeCount: 286,
+                                            commentCount: 45,
+                                            sharedCount: 845,
+                                        },
+                                        buttons: [{
+                                                title: '웹으로 보기',
+                                                link: {
+                                                    mobileWebUrl: 'https://developers.kakao.com',
+                                                    webUrl: 'https://developers.kakao.com',
+                                                },
+                                            },
+                                            {
+                                                title: '앱으로 보기',
+                                                link: {
+                                                    mobileWebUrl: 'https://developers.kakao.com',
+                                                    webUrl: 'https://developers.kakao.com',
+                                                },
+                                            },
+                                        ],
+                                    });
+                                }
+                            </script>
+                        </div>
+
+                        <div>
+                            <div id="qrcode"></div>
+                            <h2><a href="#">연락처</a></h2>
+                            <a href="tel:01049417875">
+                                <button>전화 걸기</button>
+                            </a>
+                            <button onclick="generateQRCode()">QR 코드 생성</button>
+                        </div>
+
+                    </div>
+
+
+
+                    <script type="text/javascript">
+                        function generateQRCode() {
+                            const phoneNumber = "tel:01049417875"; // 원하는 전화번호로 변경
+                            const qrcodeContainer = document.getElementById("qrcode");
+
+                            // QR 코드 초기화
+                            qrcodeContainer.innerHTML = "";
+
+                            // QR 코드 생성
+                            new QRCode(qrcodeContainer, {
+                                text: phoneNumber,
+                                width: 200,
+                                height: 200
+                            });
+                        }
+                    </script>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+
+</body>
+
+</html>

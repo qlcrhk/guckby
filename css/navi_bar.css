@@ -1,0 +1,153 @@
+@font-face { 
+  font-family: "shuite light";
+  src: url("http://syp7875.dothome.co.kr/shop/font/SUITE-Light.ttf") format("truetype");
+  font-weight: normal;
+} 
+
+@font-face { 
+  font-family: "shuite semibold";
+  src: url("http://syp7875.dothome.co.kr/shop/font/SUITE-SemiBold.ttf") format("truetype");
+} 
+
+
+/* common status */
+*{
+  font-family: "shuite light";
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+/* navbar center */
+nav{
+  font-family: "shuite semibold";
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 70px;
+  justify-content: center;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+nav a.logo_link{
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav a #logo{
+  width: 100%;
+  margin-left: 3em;
+  z-index: 1;
+  padding: 0;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li{
+  display: flex;
+  margin-left: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li a{
+  font-family: 'shuite light', sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  padding: 10px;
+  margin-left: 1rem;
+}
+/* hambuger */
+.hamburger{
+  display: none;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  cursor: pointer;
+  padding: 5px;
+}
+.hamburger div{
+  display: none;
+  width: 20px;
+  border-bottom: 2px solid rgba(92, 92, 92, 0.721);
+  margin-top: 3px;
+}
+
+/* mobile menu */
+.nav_menu_mobile{
+  display: none;
+  margin-top:70px;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+nav ul.nav_menu_b li a::after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #3e3f8b;  
+  transform: scaleX(0);  
+  padding-bottom: 5px;
+  transition: transform 250ms ease-in-out;
+}
+nav ul.nav_menu_b li a:hover::after { transform: scaleX(1); }
+
+nav ul.nav_menu_mobile li a{
+  display: inline-block;
+  width: auto;
+}
+
+nav ul.nav_menu_mobile li a::after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #3e3f8b;  
+  transform: scaleX(0);  
+  padding-bottom: 5px;
+  transition: transform 250ms ease-in-out;
+}
+nav ul li a:hover::after { transform: scaleX(1); }
+
+
+.show{
+  height: 310px;
+  transition: all 0.5s ease;
+  background-color: white;
+}
+.nav_menu_mobile li{
+  padding: 1.3em;
+}
+
+
+@media (max-width: 700px){
+  .nav_menu_b{
+    display: none;
+  }
+  .hamburger{
+    display: flex;
+  }
+  
+  .hamburger div,.hamburger li{
+    display: block;
+  }
+  .nav_menu_mobile{
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  
+}
