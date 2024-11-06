@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/* 초기화*/
+
+body,h1,h2,h3,h4,h5,h6,p,ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+address{
+    font-style: normal;
+}
+hr{
+    display: none;
+}
+.blind{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(0,0,0,0)
+}
+/* 헤더 */
+#headerWrap{
+    position: relative;
+    background: url(./image/bg.jpg) no-repeat center / cover;
+    width: 100%;
+    height: 600px;
+}
+#headerWrap::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #00000033;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+header { display: flex; justify-content: space-between; background-color: black; border-radius: 100px; width: 100%; position: fixed; margin-top: 50px;}
+header h1 { color: #fff; margin-left: 100px; position: relative;}
+header nav { position: relative;}
+header nav ul { display: flex; gap: 2em; margin-top: 1em;}
+header nav ul li{ margin: 0 20px; }
+header nav ul li a{ color: #fff; }
+
+/* 메인 */
+
+section {
+    width: 50%;
+    height: 100vh;
+    float: left;
+    box-sizing: border-box;
+}
+
+#sect1{
+    background-color: rgb(90, 174, 230);
+}
+
+#sect2{
+    background-color: rgb(255, 184, 234);
+}
+
+section h2 {
+    margin-bottom: 50px;
+}
+/* 어사이드 */
+aside {
+    background-color: blanchedalmond;
+    width: 200px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    z-index: 1;
+    
+}
+/* 푸터 */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    clear: both;
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+    overflow: hidden;
+}
+
+footer::before{
+    content: "";
+    width: calc(100% + 200px);
+    height: calc(100% + 200px);
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    background: url(./image/bg.jpg) no-repeat center / cover ;
+    filter: blur(10px) brightness(30%);
+
+}
+
+footer address, footer small{
+    position: relative;
+}
