@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300vh;
+        }
+
+        #cat{
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            background: url(./rb_4619.png) no-repeat center / cover;
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="cat">
+
+    </div>
+    <!-- <script>
+        window.addEventListener('wheel', (e)=>{
+            // document.body.style.backgroundColor = 'blue';
+            console.log(e.wheelDelta);
+            if( e.wheelDelta < 0 ){
+                console.log('내려갑니다.')
+                document.body.style.backgroundColor = 'blue';
+            }else{
+                console.log("올라갑니다");
+                document.body.style.backgroundColor = 'yellow';
+            }
+        })
+    </script> -->
+    <script>
+        // window.scrollY = 0;
+        const cat = document.getElementById('cat');
+        let result = 1;
+        window.addEventListener('wheel',(e)=>{
+            if(e.wheelDelta>0){
+                if (result>1) return;
+                result += 0.05;
+            }else{
+                if (result<0) return;
+                result -= 0.05;
+            }
+            cat.style.opacity = result;
+            cat.style.width = `${window.scrollY}px`;
+            cat.style.height = `${window.scrollY}px`;
+        })
+    </script>
+</body>
+</html>

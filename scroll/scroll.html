@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 300vh;
+            background: linear-gradient(blue, black),#ccc;
+        }
+        div{
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button>상단에서 300px 만큼 아래로</button>
+        <button>상단에서 100px 만큼 아래로</button>
+        <button>상단에서 100px 만큼 위로</button>
+        
+    <script>
+        const btn = document.querySelectorAll('button');
+
+        btn[0].addEventListener('click',()=>{
+            window.scrollTo(0,300);
+            console.log(window.scrollY);
+        })
+
+        btn[1].addEventListener('click',()=>{
+            window.scrollBy(0,100);
+            console.log(window.scrollY);
+        })
+
+        btn[2].addEventListener('click',()=>{
+            window.scrollBy(0,-100);
+            console.log(window.scrollY);
+        })
+    </script>
+    </div>
+</body>
+
+</html>

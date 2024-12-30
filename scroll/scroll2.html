@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body,ul,li{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            height: 300vh;
+            background-color: gray;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        nav{position: absolute; top: 0; left: 0; width: 100%; border-bottom:1px solid #fff5 ;
+        transition: 0.5s;}
+
+        nav ul{ display: flex; justify-content: center; align-items: center; height: 70px; gap: 30px;}
+        nav ul li{}
+        nav ul li a{color: #fff;}
+
+        /* gnb 스크롤 발생시 nav 스타일 */
+        .active{
+            position: fixed;
+            background: white;
+        }
+
+        .active ul li a{
+            color: #000;
+        }
+        section{
+            height: 500px;
+            background-color: seagreen;
+        }
+
+
+    </style>
+    <script src="./scroll2.js" defer></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">menu</a></li>
+        </ul>
+    </nav>
+    <section></section>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        *{
+            cursor: none;
+        }
+        div{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+        }
+
+        img{
+            position: absolute; 
+            top:0;
+            left: 0;
+            pointer-events: none;
+        }
+        
+        #pointer{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #000;
+            border: 0;
+            margin: 0;
+            
+        }
+    </style>
+
+    <script>
+        // document.addEventListener('DOMContentLoaded', () => {
+
+        //     const div = document.querySelector('div');
+        //     const p = document.querySelectorAll('p');
+
+        //     div.addEventListener('mousemove', (e) => {
+        //         p[0].innerText = `screenX: ${e.screenX}, screenY ${e.screenY}`;
+        //         p[1].innerText = `pageX: ${e.pageX}, pageY ${e.pageY}`;
+        //         p[2].innerText = `clientX: ${e.clientX}, clientY ${e.clientY}`;
+        //         p[3].innerText = `offsetX: ${e.offsetX}, offsetY ${e.offsetY}`;
+        //         p[4].innerText = `x: ${e.x}, y ${e.y}`;
+
+        //     })
+
+        // })
+
+        document.addEventListener('DOMContentLoaded',()=>{
+            
+            const catmouse = document.getElementById('mousecat');
+            const pointer = document.getElementById('pointer')
+            console.log(catmouse);
+
+            document.addEventListener('mousemove',(e)=>{
+                // catmouse.style.left = `${e.pageX }px`;
+                // catmouse.style.top = `${e.pageY}px`
+
+                pointer.style.left = `${e.pageX +10 }px`;
+                pointer.style.top = `${e.pageY +10}px`
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <h1>마우스 위치 알아내기</h1>
+    <div>마우스 위치 알아내기</div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <img src="./rb_4619.png" id="mousecat" alt="고양이 마우스" width="100px" >
+    <a href="https://www.naver.com">네이버</a>
+    <div id="pointer"></div>
+
+</body>
+
+</html>
